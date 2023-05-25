@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.hero {
+  height: 500px;
+  color: #00ae83;
+  background: url("herobg.f52f781a.svg") center / cover no-repeat;
+  padding-top: 25vh;
+  padding-bottom: 105vh;
+}
+
+.first-cta {
+  background-image: url("bgwithhills.98a43429.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials .row .col {
+  border: 3px solid #000;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 5vh 0;
+}
+
+.final-cta {
+  height: 500px;
+  background-color: #0000;
+  background-image: linear-gradient(#000000b3, #000000b3), url("bglastsection.bbb28878.png");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
+.green-fill {
+  color: #fff;
+  background-color: #00ae83;
+  border-radius: 2rem;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  padding: 1rem 2.2rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.green-fill:hover {
+  color: #00ae83;
+  background-color: #0000;
+  border: 3px solid #00ae83;
+}
+
+/*# sourceMappingURL=index.b2d9cf43.css.map */

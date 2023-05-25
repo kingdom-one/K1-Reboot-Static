@@ -1,0 +1,64 @@
+$green-primary: #00AE83;
+
+/* overall set up */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+/* sections of the page */
+.hero {
+  background: url(images/herobg.svg);
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 500px;
+  color: $green-primary;
+  padding-top: 25vh;
+  padding-bottom: 105vh;
+}
+
+.first-cta {
+  background-image: url(images/bgwithhills.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.testimonials .row .col {
+  border: 3px solid black;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 5vh 0vh;
+}
+
+.final-cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bglastsection.png);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+/* buttons */
+.green-fill {
+  text-decoration: none;
+  color: white;
+  background-color: $green-primary;
+  padding: 1rem 2.2rem;
+  border-radius: 2rem;
+  font-weight: 900;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+
+  &:hover {
+    color: $green-primary;
+    border: 3px solid $green-primary;
+    background-color: transparent;
+  }
+}
