@@ -6,9 +6,25 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 20px;
+}
+
 .container-fluid {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
+.whitetxt {
+  color: white;
 }
 
 /* sections of the page */
@@ -17,10 +33,23 @@ body {
   background-position: center;
   background-size: cover; 
   background-repeat: no-repeat;
-  height: 500px;
-  color: $green-primary;
-  padding-top: 25vh;
-  padding-bottom: 105vh;
+  color: var(--green-primary);
+  height: 800px !important;
+  padding-top: 35vh;
+  padding-bottom: 95vh;
+
+  > div:nth-child(1) > div {
+    width: 80vw;
+    
+    > h1 {
+      color: white;
+      font-size: 130px;
+    }
+  }
+
+  > div:nth-child(2) > div:nth-child(3) > img {
+    margin-top: -35vh;
+  }
 }
 
 .first-cta {
@@ -28,6 +57,10 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  > div > div {
+    width: 60vw;
+  }
 }
 
 .testimonials .row .col {
@@ -38,18 +71,34 @@ body {
 }
 
 .final-cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bglastsection.png);
+  background: url(images/bglastsection.png);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+
+  > div > div {
+    width: 70vw;
+  }
+}
+
+.problems > div > div {
+  width: 60vw;
+}
+
+.problems > div.row.text-center.mx-auto {
+  width: 80vw;
+  margin-top: 5vh; 
+}
+
+.selling-points > div > div.mx-auto.text-center {
+  width: 40vw;
 }
 
 /* buttons */
 .green-fill {
   text-decoration: none;
   color: white;
-  background-color: $green-primary;
+  background-color: var(--green-primary);
   padding: 1rem 2.2rem;
   border-radius: 2rem;
   font-weight: 900;
@@ -57,8 +106,8 @@ body {
   margin-bottom: 3vh;
 
   &:hover {
-    color: $green-primary;
-    border: 3px solid $green-primary;
+    color: var(--green-primary);
+    border: 3px solid var(--green-primary);
     background-color: transparent;
   }
 }
