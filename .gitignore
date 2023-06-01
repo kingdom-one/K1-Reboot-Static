@@ -1,4 +1,7 @@
+# Ignore Tooling
 /node_modules
 /.parcel-cache
 .DS_Store
+
+# Ignore dist for simpler code review
 /dist
