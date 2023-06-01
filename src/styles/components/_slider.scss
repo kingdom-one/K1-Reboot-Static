@@ -1,0 +1,100 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+// Base Styles
+
+.slider {
+	cursor: grab;
+	position: relative;
+	max-height: 60rem;
+	height: fit-content;
+
+	&__image {
+		max-height: 40rem;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__meta {
+		margin-bottom: 2rem;
+	}
+
+	&__buttons {
+		margin-top: auto;
+	}
+}
+
+// Mixin for Color Overrides
+@mixin swiperStyles($color: v.$color-secondary) {
+
+	.slider {
+
+		&__info {
+			color: $color;
+		}
+
+		&__meta {
+			color: $color;
+
+			a {
+				color: $color;
+				transition: color v.$transition--standard;
+
+				&:hover {
+					color: darken($color, 10%);
+				}
+			}
+		}
+	}
+
+	.swiper-pagination {
+		position: relative;
+		margin-top: 2rem;
+
+		&.swiper-pagination-bullets {
+
+			.swiper-pagination-bullet {
+
+				&-active {
+					background-color: $color;
+				}
+			}
+		}
+	}
+
+	.swiper-button {
+		color: $color;
+
+		&-next {
+
+			@extend .swiper-button;
+		}
+
+		&-prev {
+
+			@extend .swiper-button;
+		}
+	}
+}
+
+#entertainment-slider {
+
+	@include swiperStyles(v.$color-primary);
+}
+
+#registration-slider {
+
+	.slider {
+
+		&__info {
+			color: white;
+			margin-bottom: 2rem;
+		}
+	}
+
+	@include swiperStyles(white);
+}

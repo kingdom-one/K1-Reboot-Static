@@ -1,0 +1,39 @@
+@use "../../abstracts/variables" as v;
+@use "../../abstracts/mixins" as m;
+@use "../buttons";
+
+%column {
+
+	@include m.displayFlex(column);
+}
+
+.two-col {
+
+	&__image {
+
+		@include m.fitMedia(img);
+	}
+
+	&__video {
+
+		@include m.fitMedia(iframe);
+	}
+
+	&__col-1 {
+
+		@extend %column;
+	}
+
+	&__col-2 {
+
+		@extend %column;
+	}
+}
+
+:where(.two-col) {
+
+	.cta__btn {
+		margin-top: 3rem;
+		align-self: flex-start;
+	}
+}

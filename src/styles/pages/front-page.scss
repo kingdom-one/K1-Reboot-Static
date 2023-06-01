@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+#hero {
+	background-color: black;
+	color: white;
+}
