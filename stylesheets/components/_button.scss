@@ -1,0 +1,16 @@
+.green-fill {
+    text-decoration: none;
+    color: white;
+    background-color: var(--green-primary);
+    padding: 1rem 2.2rem;
+    border-radius: 2rem;
+    font-weight: 900;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  
+    &:hover {
+      color: var(--green-primary);
+      border: 3px solid var(--green-primary);
+      background-color: transparent;
+    }
+  }
