@@ -1,4 +1,3 @@
-// @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
 
@@ -18,15 +17,10 @@
 	.headline {
 		color: white;
 	}
-
-	// > div:nth-child(2) > div:nth-child(3) > img {
-	// 	margin-top: -35vh;
-	// }
 }
-.quick-sell {
+aside.quick-sell {
 	position: absolute;
 	bottom: 10px;
-	// @include m.displayFlex(column, center, center);
 	width: 100%;
 }
 .first-cta {
