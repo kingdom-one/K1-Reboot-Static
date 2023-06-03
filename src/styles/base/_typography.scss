@@ -3,6 +3,7 @@
 body {
 	color: black;
 	font-family: v.$font-body;
+	font-display: swap;
 
 	a {
 		text-decoration: none;
@@ -30,11 +31,13 @@ body {
 %heading {
 	font-family: v.$font-poppins;
 	font-weight: 700;
+	font-display: swap;
 }
 
 h1,
 .h1 {
 	font-family: v.$font-roie;
+	font-display: swap;
 	font-size: 4em;
 	text-transform: lowercase;
 }
@@ -73,6 +76,7 @@ h6,
 	font-family: v.$font-poppins;
 	font-weight: 400;
 	font-size: 1.35em;
+	font-display: swap;
 }
 
 .subheadline {
