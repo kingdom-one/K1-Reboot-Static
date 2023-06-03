@@ -1,0 +1,12 @@
+@use "sass:list";
+@use "../abstracts/variables" as v;
+
+@function transition($properties) {
+	$new-list: ();
+
+	@each $property in $properties {
+		$new-list: list.append($new-list, #{$property} v.$transition--standard, comma);
+	}
+
+	@return $new-list;
+}

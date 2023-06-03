@@ -1,0 +1,84 @@
+@use '../abstracts/variables' as v;
+
+body {
+	color: black;
+	font-family: v.$font-body;
+	font-display: swap;
+
+	a {
+		text-decoration: none;
+	}
+
+	.text-content {
+		font-family: v.$font-body;
+		font-size: 1.35em;
+	}
+
+	p {
+		@extend .text-content;
+	}
+
+	li {
+		@extend .text-content;
+	}
+
+	.small,
+	small {
+		font-family: v.$font-body;
+	}
+}
+
+%heading {
+	font-family: v.$font-poppins;
+	font-weight: 700;
+	font-display: swap;
+}
+
+h1,
+.h1 {
+	font-family: v.$font-roie;
+	font-display: swap;
+	font-size: 4em;
+	text-transform: lowercase;
+}
+
+h2,
+.h2 {
+	@extend %heading;
+	font-size: 3em;
+	color: v.$color-grey;
+}
+
+h3,
+.h3 {
+	@extend %heading;
+	font-size: 2.4em;
+	text-transform: capitalize;
+}
+
+h4,
+.h4 {
+	@extend %heading;
+	font-size: 1.75em;
+}
+
+h5,
+.h5,
+h6,
+.h6 {
+	@extend %heading;
+}
+
+.headline {
+	@extend %heading;
+}
+%subheadline {
+	font-family: v.$font-poppins;
+	font-weight: 400;
+	font-size: 1.35em;
+	font-display: swap;
+}
+
+.subheadline {
+	@extend %subheadline;
+}

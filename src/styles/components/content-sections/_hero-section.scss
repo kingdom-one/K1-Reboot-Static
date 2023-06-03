@@ -1,0 +1,23 @@
+@use "../../abstracts/mixins" as m;
+@use "../../abstracts/variables" as v;
+
+.hero {
+	height: 60rem;
+
+	@include m.displayFlex(column, center, center);
+
+	.col {
+
+		@include m.displayFlex(column, flex-start, stretch);
+	}
+
+	&__btn {
+		align-self: center;
+		font-size: 1.35em;
+	}
+
+	&__headline {
+		color: v.$color-primary--dark;
+		animation: fadeIn 1s;
+	}
+}

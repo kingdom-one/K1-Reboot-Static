@@ -1,0 +1,78 @@
+// @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+#hero {
+	background-color: black;
+	color: white;
+}
+
+/* sections of the page */
+.hero {
+	background: url(../../assets/images/herobg.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: var(--green-primary);
+	height: 800px !important;
+	padding-top: 35vh;
+	padding-bottom: 95vh;
+
+	> div:nth-child(1) > div {
+		width: 80vw;
+
+		> h1 {
+			color: white;
+			font-size: 130px;
+		}
+	}
+
+	> div:nth-child(2) > div:nth-child(3) > img {
+		margin-top: -35vh;
+	}
+}
+
+.first-cta {
+	background-image: url(../../assets/images/bgwithhills.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	> div > div {
+		width: 60vw;
+	}
+}
+
+.testimonials .row .col {
+	border: 3px solid black;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 5vh 0vh;
+}
+
+.final-cta {
+	background: url(../../assets/images/bglastsection.png);
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	> div > div {
+		width: 70vw;
+	}
+}
+
+.problems {
+	> div > div {
+		width: 60vw;
+	}
+	.row.text-center.mx-auto {
+		width: 80vw;
+		margin-top: 5vh;
+	}
+}
+
+.selling-points {
+	.mx-auto.text-center {
+		width: 40vw;
+	}
+}

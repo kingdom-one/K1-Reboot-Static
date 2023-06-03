@@ -1,0 +1,30 @@
+/* ////////////
+// TYPOGRAPHY
+///////////// */
+$font-roie: 'Roie', sans-serif;
+$font-poppins: 'poppins', sans-serif;
+$font-headings: $font-roie;
+$font-body: $font-poppins;
+
+/* //////////
+// COLORS
+/////////// */
+
+/* K1 Greens */
+$color-k1-green: #00ae83;
+$color-k1-green--dark: #00644b;
+$color-academy-green: #2e3636;
+
+/* Utilities */
+$color-grey: #4b4b4b;
+$color-grey--light: #dbdbdb;
+
+$color-primary: $color-k1-green;
+$color-primary--dark: $color-k1-green--dark;
+$color-primary--darkest: $color-academy-green;
+
+/* //////////
+// MISC.
+/////////// */
+$transition--standard: 0.3s ease;
+$color-secondary: $color-academy-green;

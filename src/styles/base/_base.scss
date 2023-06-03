@@ -1,0 +1,65 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+section {
+	padding: 6.5rem 0;
+	position: relative;
+}
+
+figure {
+	margin-bottom: 0;
+}
+
+.container {
+	position: relative;
+}
+
+.row {
+	position: relative;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	height: auto;
+}
+
+.col {
+	@include m.displayFlex(column);
+	position: relative;
+	height: auto;
+}
+
+.bg-color-primary {
+	background-color: v.$color-primary;
+	color: white;
+}
+
+.hide {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+/* overall set up */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h3 {
+	font-size: 35px;
+}
+
+p {
+	font-size: 20px;
+}
+
+.container-fluid {
+	padding-top: 15vh;
+	padding-bottom: 15vh;
+}
+
+.whitetxt {
+	color: white;
+}
