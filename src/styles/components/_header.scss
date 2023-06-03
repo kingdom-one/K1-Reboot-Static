@@ -1,25 +1,27 @@
-@use "../abstracts/functions" as fn;
-@use "../abstracts/variables" as v;
-@use "../abstracts/mixins" as m;
-@use "./buttons";
+@use '../abstracts/functions' as fn;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use './buttons';
 
-#site-header {
-	background-color: v.$color-primary--dark;
-}
+.header {
+	position: absolute;
+	z-index: 900;
+	width: 100%;
+	background-color: transparent;
+	color: white;
 
-.logo-image {
-	margin: 0;
-
-	svg {
-		aspect-ratio: 1;
-		height: 15rem;
+	.row {
+		justify-content: space-between;
 	}
 
-	h1 {
-		display: none;
+	a {
+		color: white;
 	}
 }
 
+#main-nav {
+	display: none;
+}
 .navbar {
 	align-items: center;
 
@@ -59,13 +61,11 @@
 	}
 
 	&.cta {
-
 		@extend .btn__primary--fill;
 	}
 }
 
 .mobile-navbar {
-
 	@extend .navbar;
 }
 
@@ -74,7 +74,6 @@
 	background-color: v.$color-secondary;
 
 	&__header {
-
 		@include m.displayFlex(row, flex-start, center);
 		padding: 2rem 1rem;
 

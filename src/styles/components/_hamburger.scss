@@ -1,26 +1,22 @@
-@use "../abstracts/mixins" as m;
-@use "../abstracts/variables" as v;
-$size: 6.5rem;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
 
 .hamburger {
-	padding: 1rem;
-	position: relative;
-	border: 2px solid white;
-	border-radius: 5px;
-	height: $size;
-	width: $size;
+	width: 5rem;
+	gap: 1rem;
 	cursor: pointer;
 
-	&:hover {
-		background-color: v.$color-secondary;
-	}
-
-	&__line {
-		position: relative;
+	&__lines {
 		border: 2px solid white;
+		display: block;
+		border-radius: 1rem;
 
-		:not(:last-child) {
-			margin-bottom: 1rem;
+		&:nth-child(1),
+		&:nth-child(3) {
+			width: 80%;
+		}
+		&:nth-child(2) {
+			width: 100%;
 		}
 	}
 }

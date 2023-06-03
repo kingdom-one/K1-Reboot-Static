@@ -2,41 +2,35 @@
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
 
-#hero {
-	background-color: black;
-	color: white;
-}
-
-/* sections of the page */
 .hero {
-	background: url(../../assets/images/herobg.svg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	color: var(--green-primary);
-	height: 800px !important;
-	padding-top: 35vh;
-	padding-bottom: 95vh;
+	background: url(../../assets/images/homepage--hero.jpg) center/cover no-repeat;
+	position: relative;
+	// height: 80rem;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
 
-	> div:nth-child(1) > div {
-		width: 80vw;
-
-		> h1 {
-			color: white;
-			font-size: 130px;
-		}
+	&__image-overlay {
+		position: absolute;
+		background-color: rgba(black, 0.5);
+		width: 100%;
+		height: 100%;
 	}
 
-	> div:nth-child(2) > div:nth-child(3) > img {
-		margin-top: -35vh;
+	.headline {
+		color: white;
 	}
+
+	// > div:nth-child(2) > div:nth-child(3) > img {
+	// 	margin-top: -35vh;
+	// }
 }
-
+.quick-sell {
+	position: absolute;
+	bottom: 10px;
+	// @include m.displayFlex(column, center, center);
+	width: 100%;
+}
 .first-cta {
-	background-image: url(../../assets/images/bgwithhills.png);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url(../../assets/images/bgwithhills.png) center/cover no-repeat;
 
 	> div > div {
 		width: 60vw;
