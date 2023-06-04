@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,150 +8,290 @@
 	<link rel="stylesheet" type="text/css" href="./styles/vendors/vendors.scss">
 	<link rel="stylesheet" type="text/css" href="./styles/main.scss">
 	<link rel="stylesheet" type="text/css" href="./styles/pages/front-page.scss">
+	<script src="./js/index.js" type="module" defer></script>
+	<script src="./js/frontPage.js" type="module" defer></script>
 </head>
 
 <body>
-	<div class="container-fluid hero">
-		<div class="row">
-			<div class="mx-auto">
-				<h1>kingdom one</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<img src="./assets/images/heroimgleft.svg">
-			</div>
-			<div class="col">
-				<img src="./assets/images/growingthechurch.png" width="100%">
-				<h3>Regain peace of mind in your HR and Finance ministries with coaching, education, and strategy built for you!</h3>
-				<br><br>
-				<a class="green-fill" href="#">Get Started</a>
-			</div>
-			<div class="col">
-				<img src="./assets/images/heroimgright.svg">
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid selling-points">
-		<div class="row">
-			<div class="mx-auto text-center">
-				<img src="./assets/images/brokenleaves.png" width="40%">
-			</div>
-			<div class="col">
-				<h1 style="font-size: 100px"><b>Ministry is <br> <span style="color: var(--green-primary)">Complex</span></b></h1>
-				<div class="row">
-					<div class="col">
-						<hr>
+	<header id="site-header" class="header py-3">
+		<div class="container-fluid gx-5">
+			<div class="row justify-content-between">
+				<div class="col-3 d-flex justify-content-around p-3">
+					<a href="/">Logo</a>
+					<div class="hamburger d-flex flex-column justify-content-evenly align-items-center">
+						<span class="hamburger__lines"></span>
+						<span class="hamburger__lines"></span>
+						<span class="hamburger__lines"></span>
 					</div>
-					<div class="col">
-						<hr>
+					<nav id="main-nav">
+						<ul>
+							<li>About Us</li>
+							<li>Services</li>
+							<li>Resources</li>
+							<li>Support</li>
+							<li>Store</li>
+							<li class="btn pill-btn">Get Started</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-5 d-flex justify-content-center align-items-center">
+					<a href="#" class="header__social-icon mx-1">Facebook</a>
+					<a href="#" class="header__social-icon mx-1">Instagram</a>
+					<a href="#" class="header__social-icon mx-1">LinkedIn</a>
+					<div class="cta pill-btn mx-1">Get Started</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="hero__background">
+				<div class="hero__background--lower"></div>
+				<div class="hero__background--upper"></div>
+			</div>
+			<div class="hero__content container-fluid d-flex align-items-stretch">
+				<div class="row">
+					<div class="col-2 d-flex flex-column">
+						<img src="./assets/images/heroimgleft.svg" class="mt-auto">
+					</div>
+					<div class="col d-flex flex-column justify-content-center">
+						<div class="container">
+							<div class="hero__text">
+								<h1 class="hero__text--headline text-white">kingdom one</h1>
+								<span class="hero__text--subheadline-1 subheadline white-stroke">Growing the church together</span>
+								<p class="hero__text--subheadline-2 subheadline text-primary">Regain peace of mind in your HR and Finance ministries with coaching, education, and strategy
+									built for you!
+								</p>
+								<a class="pill-btn__fill--primary" href="#">Get Started</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 d-flex flex-column">
+						<img src="./assets/images/heroimgright.svg">
 					</div>
 				</div>
-				<h3>Are you ready to simplify? Our approach is simple; we <br> use marketplace tools, resources, and experience <br> with a heart for healthy ministry.</h3>
 			</div>
-		</div>
-	</div>
+			<aside class="quick-sell">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">IMAGE!</div>
+						<div class="col-lg-6 d-flex flex-column justify-content-center align-items-start">
+							<h2 class="headline text-white">Training Your Staff Should be quick & efficient</h2>
+							<a href="#" class="pill-btn__outline--white">Download</a>
+						</div>
+					</div>
+				</div>
 
-	<div class="container-fluid first-cta">
-		<div class="row">
-			<div class="mx-auto">
-				<br><br>
-				<h1 class="whitetxt"><b>Begin the journey of healthy growth today!</b></h1>
-				<br>
-				<h3 class="whitetxt">We'd love to partner with you and your team to help manage those <br> tasks keeping you from the parts of ministry you love.</h3>
-				<br><br>
-				<a class="green-fill" href="#">Get Started</a>
-				<br><br>
-				<br><br>
-				<h3 class="whitetxt"><img src="./assets/images/healthygrowth.svg">Healthy Growth</h3>
-				<br>
-				<hr>
-				<br>
-				<h3 class="whitetxt"><img src="./assets/images/staffculture.svg">Courageous Staff Culture</h3>
-				<br>
-				<hr>
-				<br>
-				<h3 class="whitetxt"><img src="./assets/images/education.svg">Education That Sparks Vision</h3>
-				<br>
-				<hr>
+			</aside>
+		</section>
+		<section class="selling-points">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<img src="./assets/images/brokenleaves.png">
+					</div>
+					<div class="col">
+						<h2 class="headline">Ministry is <span class="text-primary d-block">Complex</span></h2>
+						<div class="row selling-points__underlines">
+							<div class="col">
+								<hr class="selling-points__underlines--line-1">
+							</div>
+							<div class="col-2">
+								<hr class="selling-points__underlines--line-2">
+							</div>
+							<div class="col-4"></div>
+						</div>
+						<p>Are you ready to simplify? Our approach is simple; we use marketplace tools, resources, and experience with a heart for healthy ministry.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="the-plan bg-rolling-hills" id="healthy-growth">
+			<div class="container">
+				<div class="row">
+					<div class="col align-items-stretch">
+						<div class="the-plan__content">
+							<h2 class="text-white">Begin the journey of healthy growth today!</h2>
+							<span class="subheadline text-white">We'd love to partner with you and your team to help manage those tasks keeping you from the parts of ministry you
+								love.</span>
+							<a class="pill-btn__fill--primary" href="#">Get Started</a>
+						</div>
+						<div class="scoll-reveal text-white" style="opacity:0;">
+							<div class="scroll-reveal__item">
+								<img src="./assets/images/healthygrowth.svg" alt="" class="scroll-reveal__icon">
+								<h3 class="headline">Healthy Growth</h3>
+							</div>
+							<div class="scroll-reveal__item">
+								<img src="./assets/images/staffculture.svg" alt="" class="scroll-reveal__icon">
+								<h3 class="headline">Courageous Staff Culture</h3>
+							</div>
+							<div class="scroll-reveal__item">
+								<img src="./assets/images/education.svg" alt="" class="scroll-reveal__icon">
+								<h3 class="headline">Education that sparks vision</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<aside class="testimonials text-center">
+			<div class="swiper" id="testimonials-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./assets/images/tim.png">
+						<p class="quote">"Kingdom One brings a level a professionalism that we need and does so with Christ at the center."</p>
+						<div class="quote__attribution">
+							<span class="subheadline quote__attribution--name">Tim Kuhl</span>
+							<span class="subheadline quote__attribution--role">Pastor, Something Church</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/images/tim.png">
+						<p class="quote">"Kingdom One brings a level a professionalism that we need and does so with Christ at the center."</p>
+						<div class="quote__attribution">
+							<span class="subheadline quote__attribution--name">Tim Kuhl</span>
+							<span class="subheadline quote__attribution--role">Pastor, Something Church</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/images/tim.png">
+						<p class="quote">"Kingdom One brings a level a professionalism that we need and does so with Christ at the center."</p>
+						<div class="quote__attribution">
+							<span class="subheadline quote__attribution--name">Tim Kuhl</span>
+							<span class="subheadline quote__attribution--role">Pastor, Something Church</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/images/tim.png">
+						<p class="quote">"Kingdom One brings a level a professionalism that we need and does so with Christ at the center."</p>
+						<div class="quote__attribution">
+							<span class="subheadline quote__attribution--name">Tim Kuhl</span>
+							<span class="subheadline quote__attribution--role">Pastor, Something Church</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/images/tim.png">
+						<p class="quote">"Kingdom One brings a level a professionalism that we need and does so with Christ at the center."</p>
+						<div class="quote__attribution">
+							<span class="subheadline quote__attribution--name">Tim Kuhl</span>
+							<span class="subheadline quote__attribution--role">Pastor, Something Church</span>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/images/tim.png">
+						<p class="quote">"Kingdom One brings a level a professionalism that we need and does so with Christ at the center."</p>
+						<div class="quote__attribution">
+							<span class="subheadline quote__attribution--name">Tim Kuhl</span>
+							<span class="subheadline quote__attribution--role">Pastor, Something Church</span>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</aside>
+		<aside class="brands d-flex justify-content-center py-5 my-5 bg-primary text-white">
+			<p class="h1">Another Swiper</p>
+		</aside>
+		<section class="problems">
+			<div class="container text-center">
+				<div class="row justify-content-center mb-5">
+					<div class="col-10">
+						<h2>Has ministry gotten <span class="text-primary">complicated</span> for you and your team?
+						</h2>
+						<p class="subheadline my-5">Ministry life is a complicated life! Can we get an "amen"? While industry best practices and guidance is an excellent start, the pursuit
+							of
+							becoming courageous,
+							healthy, and effective is nuanced. Our team is ready to partner with you in a 1:1 capacity to assess and coach you forward thoroughly.</p>
+					</div>
+				</div>
+				<div class="row my-5">
+					<div class="col-lg-4">
+						<img src="./assets/images/resources.svg">
+						<h3>Grab Some Free Resources</h3>
+						<p>Get to know us with free tools education, and resources</p>
+					</div>
+					<div class="col-lg-4">
+						<img src="./assets/images/tools.svg">
+						<h3>Grab Tools & Courses</h3>
+						<p>Grab a tool or course to sharpen your expertise</p>
+					</div>
+					<div class="col-lg-4">
+						<img src="./assets/images/talents.svg">
+						<h3>Grab Some Talents</h3>
+						<p>Grab some talents to help get the work done</p>
+					</div>
+				</div>
+				<a class="pill-btn__fill--primary mt-auto" href="#">Get Started</a>
+			</div>
+		</section>
+		<section class="final-cta">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-2">Leafy image</div>
+					<div class="col-8 text-center py-5">
+						<h2 class="text-white">The first step towards health can feel a little daunting.</h2>
+						<span class="subheadline white-stroke my-5">Get Started today</span>
+						<p class="text-white">Getting help is a sign of strength and courage. It helps avoid the heartache of burnout, resignation, and failure. Here's to a brighter ministry
+							future where you are supported, equipped, and encouraged to grow.</p>
+						<a class="pill-btn__fill--primary mt-5" href="#">Get Started</a>
+					</div>
+					<div class="col-2"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="bg-primary--dark py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<a href="/" class="h1">Logo</a>
+					<div class="socials">
+						<div class="row">
+							<div class="col-4">Facebook</div>
+							<div class="col-4">Instagram</div>
+							<div class="col-4">LinkedIn</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="row">
+						<div class="col-lg-4">
+							<nav class="footer-nav" id="footer-nav-1">
+								<ul>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Join the Team</a></li>
+									<li><a href="#">Transparency in Coverage</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-lg-4">
+							<nav class="footer-nav" id="footer-nav-2">
+								<ul>
+									<li><a href="#">Our Services</a></li>
+									<li><a href="#">Staffing</a></li>
+									<li><a href="#">Academy</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-lg-4">
+							<nav class="footer-nav" id="footer-nav-3">
+								<ul>
+									<li><a href="#">Free Resources</a></li>
+									<li><a href="#">Podcast</a></li>
+									<li><a href="#">Go Initiatives</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center text-center">
+				<div id="copyright">&copy; {currentYear} Kingdom One<br /> All Rights Reserved</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="container-fluid testimonials text-center">
-		<div class="row">
-			<div class="col">
-				<img src="./assets/images/tim.png">
-				<br><br>
-				<h3><b>"Kingdom One brings a level <br> of professionalism that we <br> need and does so with Christ <br> at the center."</b></h3>
-				<h3>Tim Kuhl</h3>
-				<p>Pastor, Something Church</p>
-			</div>
-			<div class="col">
-				<img src="./assets/images/tim.png">
-				<br><br>
-				<h3><b>"Kingdom One brings a level <br> of professionalism that we <br> need and does so with Christ <br> at the center."</b></h3>
-				<h3>Tim Kuhl</h3>
-				<p>Pastor, Something Church</p>
-			</div>
-			<div class="col">
-				<img src="./assets/images/tim.png">
-				<br><br>
-				<h3><b>"Kingdom One brings a level <br> of professionalism that we <br> need and does so with Christ <br> at the center."</b></h3>
-				<h3>Tim Kuhl</h3>
-				<p>Pastor, Something Church</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid problems">
-		<div class="row">
-			<div class="mx-auto text-center">
-				<h1><b>Has ministry gotten <span style="color: var(--green-primary)">complicated</span> <br> for you and your team?</b></h1>
-				<br><br>
-				<p>Ministry life is a complicated life! Can we get an "amen"? While industry best practices and guidance is an excellent <br> start, the pursuit of becoming courageous,
-					healthy, and effective is nuanced. Our team is ready to partner with you in a <br> 1:1 capacity to assess and coach you forward thoroughly.</p>
-			</div>
-		</div>
-		<div class="row text-center mx-auto">
-			<div class="col">
-				<img src="./assets/images/resources.svg">
-				<br><br>
-				<h3><b>Grab Some Free <br> Resources</b></h3>
-				<p>Get to know us with free tools,<br> education, and resources</p>
-			</div>
-			<div class="col">
-				<img src="./assets/images/tools.svg">
-				<br><br>
-				<h3><b>Grab Tools & <br> Courses</b></h3>
-				<p>Grab a tool or course to <br> sharpen your expertise</p>
-			</div>
-			<div class="col">
-				<img src="./assets/images/talents.svg">
-				<br><br>
-				<h3><b>Grab Some <br> Talents</b></h3>
-				<p>Grab some talents to help <br> get the work done</p>
-			</div>
-		</div>
-		<br><br>
-		<center><a class="green-fill" href="#">Get Started</a></center>
-	</div>
-
-	<div class="container-fluid final-cta">
-		<div class="row">
-			<div class="mx-auto text-center">
-				<h1 class="whitetxt"><b>The first step towards health can <br> feel a little daunting.</b></h1>
-				<img src="./assets/images/getstarted.png">
-				<p class="whitetxt">Getting help is a sign of strength and courage. It helps avoid <br> the heartache of burnout, resignation, and failure. Here's to a <br> brighter ministry
-					future where you are supported, equipped, <br> and encouraged to grow.</p>
-				<br><br>
-				<center><a class="green-fill" href="#">Get Started</a></center>
-			</div>
-		</div>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-			crossorigin="anonymous"></script>
+	</footer>
 </body>
 
 </html>

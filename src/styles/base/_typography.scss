@@ -75,10 +75,19 @@ h6,
 %subheadline {
 	font-family: v.$font-poppins;
 	font-weight: 400;
-	font-size: 1.35em;
 	font-display: swap;
 }
 
 .subheadline {
 	@extend %subheadline;
+	font-size: 1.35em;
+}
+
+.white-stroke {
+	@extend %subheadline;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
+	font-size: 3em;
+	font-weight: 700;
 }

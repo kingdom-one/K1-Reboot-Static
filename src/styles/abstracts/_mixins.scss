@@ -1,4 +1,4 @@
-@forward "./bs_breakpoints";
+@forward './bs_breakpoints';
 
 @mixin displayFlex(
 	$direction: row,
@@ -23,5 +23,27 @@
 		height: 100%;
 		object-fit: $fit;
 		object-position: $position;
+	}
+}
+
+@mixin absolute_100 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+@mixin background-layers {
+	@include absolute_100;
+
+	&--lower {
+		@include absolute_100;
+		z-index: 1;
+	}
+
+	&--upper {
+		@include absolute_100;
+		z-index: 2;
 	}
 }
