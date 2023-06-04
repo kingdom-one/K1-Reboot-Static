@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as v;
+.swiper {
+	cursor: grab;
+}
+
+#testimonials-swiper {
+	%swiper-color {
+		color: v.$color-primary;
+	}
+
+	.swiper-slide {
+		border: 3px solid black;
+		margin-left: 40px;
+		margin-right: 40px;
+		padding: 5vh 0vh;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		@extend %swiper-color;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: v.$color-primary;
+	}
+}

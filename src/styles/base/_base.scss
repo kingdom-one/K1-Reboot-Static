@@ -39,3 +39,21 @@ main {
 	display: none !important;
 	visibility: hidden !important;
 }
+
+.bg-rolling-hills {
+	background-image: url(../assets/images/bg-images/bg-rolling-hills.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 110rem;
+
+	.container {
+		position: absolute;
+		top: 20%;
+		left: 5%;
+	}
+}
+
+.bg-primary--dark {
+	background-color: v.$color-primary--dark;
+	color: white;
+}

@@ -1,7 +1,10 @@
+@use '../abstracts/variables' as v;
 /**
 * Required
 * Calls Functions, Variables, Maps, Mixins, Root & Reboot
 */
+@import 'bootstrap/scss/functions';
+$primary: v.$color-primary;
 @import 'bootstrap/scss/bootstrap-reboot';
 
 // Useful Bootstrap Utilities

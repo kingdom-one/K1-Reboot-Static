@@ -1,17 +1,5 @@
 @use '../abstracts/variables' as v;
 
-// h1 {
-// 	font-size: 70px;
-// }
-
-// h3 {
-// 	font-size: 35px;
-// }
-
-// p {
-// 	font-size: 20px;
-// }
-
 body {
 	color: black;
 	font-family: v.$font-body;
@@ -87,10 +75,19 @@ h6,
 %subheadline {
 	font-family: v.$font-poppins;
 	font-weight: 400;
-	font-size: 1.35em;
 	font-display: swap;
 }
 
 .subheadline {
 	@extend %subheadline;
+	font-size: 1.35em;
+}
+
+.white-stroke {
+	@extend %subheadline;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
+	font-size: 3em;
+	font-weight: 700;
 }
