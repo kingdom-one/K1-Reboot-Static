@@ -17,3 +17,18 @@ const swiper = new Swiper(document.getElementById('testimonials-swiper'), {
 		type: 'bullets',
 	},
 });
+
+const staffswiper = new Swiper(document.getElementById('staff-swiper'), {
+	loop: true,
+	modules: [Navigation, Pagination],
+	slidesPerView: 3,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		type: 'bullets',
+	},
+});

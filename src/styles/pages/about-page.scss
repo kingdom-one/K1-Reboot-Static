@@ -1,0 +1,92 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+@use '../components/front-page/quick-sell';
+@use '../components/swiper';
+
+@mixin full-size {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 4rem;
+
+  &__background {
+    @include m.background-layers;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 70%, 0 100%);
+
+    &--lower {
+      background: url(../../assets/images/bg-images/aboutpage-herobg.svg) center/cover no-repeat;
+    }
+
+    &--upper {
+      background-color: rgba(black, 0.6);
+    }
+  }
+
+  &__content {
+    transform: translateY(20%);
+  }
+
+  &__text {
+    &--headline {
+      color: white;
+    }
+  }
+}
+
+.mission-slate {
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+  }
+
+  ul.timeline:before {
+    content: ' ';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+
+  ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 60px;
+    margin-bottom: 2em;
+  }
+
+  ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid v.$color-primary;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+}
+
+.values {
+	background: url(../../assets/images/bg-images/valuesbg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+
+.final-cta {
+	background: url(../../assets/images/bg-images/bglastsection.png);
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+  
+	> div > div {
+	  width: 70vw;
+	}
+  }
