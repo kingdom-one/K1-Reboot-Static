@@ -10,11 +10,11 @@
 
 .hero {
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 55vh;
 
   &__background {
     @include m.background-layers;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 70%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 80%, 0 100%);
 
     &--lower {
       background: url(../../assets/images/bg-images/aboutpage-herobg.svg) center/cover no-repeat;
@@ -26,7 +26,7 @@
   }
 
   &__content {
-    transform: translateY(20%);
+    transform: translateY(60%);
   }
 
   &__text {
@@ -74,11 +74,25 @@
 }
 
 .values {
-	background: url(../../assets/images/bg-images/valuesbg.png);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 4rem;
+  
+  &__background {
+    @include m.background-layers;
+  
+    &--lower {
+      background: url(../../assets/images/bg-images/valuesbg.png) center/cover no-repeat;
+    }
+  
+    &--upper {
+      background-color: rgba(#4B4B4B, 0.9);
+    }
   }
+
+  &__content {
+    z-index: 400;
+  }
+}
 
 .final-cta {
 	background: url(../../assets/images/bg-images/bglastsection.png);
@@ -89,4 +103,20 @@
 	> div > div {
 	  width: 70vw;
 	}
+  }
+
+  .leaf-adjustment {
+    margin-left: -20rem;
+  
+    & img {
+      margin-top: -5rem;
+    }
+  }
+  
+  .leaf-adjustment-right {
+    margin-right: -20rem;
+  
+    &img {
+      margin-top: -15rem;
+    }
   }
