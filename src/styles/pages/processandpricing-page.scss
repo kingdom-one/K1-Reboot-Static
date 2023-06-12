@@ -1,0 +1,79 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+@use '../components/front-page/quick-sell';
+@use '../components/swiper';
+
+@mixin full-size {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 55vh;
+
+  &__background {
+    @include m.background-layers;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 80%, 0 100%);
+
+    &--lower {
+      background: url(../../assets/images/bg-images/processandpricing-bg.svg) center/cover no-repeat;
+    }
+
+    &--upper {
+      background-color: rgba(black, 0.6);
+    }
+  }
+
+  &__content {
+    transform: translateY(60%);
+  }
+
+  &__text {
+    &--headline {
+      color: white;
+    }
+  }
+}
+
+.talent-description  {
+    ul {
+        list-style: none; /* Remove default bullets */
+      }
+      
+      ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: red; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+}
+
+.final-cta {
+	background: url(../../assets/images/bg-images/bglastsection.png);
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+  
+	> div > div {
+	  width: 70vw;
+	}
+  }
+
+  .leaf-adjustment {
+    margin-left: -20rem;
+  
+    & img {
+      margin-top: -5rem;
+    }
+  }
+  
+  .leaf-adjustment-right {
+    margin-right: -20rem;
+  
+    &img {
+      margin-top: -15rem;
+    }
+  }

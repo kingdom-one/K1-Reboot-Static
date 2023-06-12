@@ -36,42 +36,43 @@
   }
 }
 
-.mission-slate {
-  ul.timeline {
-    list-style-type: none;
-    position: relative;
-  }
 
-  ul.timeline:before {
-    content: ' ';
-    background: black;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-  }
+    ul.timeline {
+      list-style-type: none;
+      position: relative;
 
-  ul.timeline > li {
-    margin: 20px 0;
-    padding-left: 60px;
-    margin-bottom: 2em;
-  }
+      &:before {
+        content: ' ';
+        background: black;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+      }
 
-  ul.timeline > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid v.$color-primary;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-  }
-}
+      > li {
+        margin: 20px 0;
+        padding-left: 60px;
+        margin-bottom: 2em;
+
+        &:before {
+          content: ' ';
+          background: white;
+          display: inline-block;
+          position: absolute;
+          border-radius: 50%;
+          border: 3px solid v.$color-primary;
+          left: 20px;
+          width: 20px;
+          height: 20px;
+          z-index: 400;
+        }
+      }
+    }
+
+
 
 .values {
   position: relative;
@@ -94,29 +95,21 @@
   }
 }
 
-.final-cta {
-	background: url(../../assets/images/bg-images/bglastsection.png);
-	background-position: right;
-	background-size: cover;
-	background-repeat: no-repeat;
-  
-	> div > div {
-	  width: 70vw;
-	}
-  }
-
   .leaf-adjustment {
-    margin-left: -20rem;
+
+    &--left {
+      transform: translateX(-20rem);
   
-    & img {
-      margin-top: -5rem;
+      & img {
+        transform: translateY(-5rem);
+      }
     }
-  }
+
+    &--right {
+      transform: transformX(-20rem);
   
-  .leaf-adjustment-right {
-    margin-right: -20rem;
-  
-    &img {
-      margin-top: -15rem;
+      &img {
+        transform: transformY(-15rem);
+      }
     }
   }

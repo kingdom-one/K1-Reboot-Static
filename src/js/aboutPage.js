@@ -3,7 +3,7 @@ import 'swiper/swiper.min.css';
 import 'swiper/modules/pagination/pagination.min.css';
 import 'swiper/modules/navigation/navigation.min.css';
 
-const swiper = new Swiper(document.getElementById('testimonials-swiper'), {
+const staffswiper = new Swiper(document.getElementById('staff-swiper'), {
 	loop: true,
 	modules: [Navigation, Pagination],
 	slidesPerView: 3,
