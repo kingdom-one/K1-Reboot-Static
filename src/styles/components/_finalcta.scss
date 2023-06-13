@@ -1,0 +1,13 @@
+@use '../abstracts/functions' as fn;
+@use '../abstracts/variables' as v;
+
+.final-cta {
+	background: url(/src/assets/images/bg-images/bglastsection.png);
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+  
+	&__content {
+	  width: 70vw;
+	}
+  }

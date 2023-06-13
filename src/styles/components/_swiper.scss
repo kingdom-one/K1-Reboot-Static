@@ -23,3 +23,23 @@
 		background-color: v.$color-primary;
 	}
 }
+
+#staff-swiper {
+	%swiper-color {
+		color: v.$color-primary;
+	}
+
+	.swiper-slide {
+		margin-left: 40px;
+		margin-right: 40px;
+		padding: 5vh 0vh;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		@extend %swiper-color;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: v.$color-primary;
+	}
+}

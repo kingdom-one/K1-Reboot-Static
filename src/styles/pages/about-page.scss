@@ -1,0 +1,115 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+@use '../components/front-page/quick-sell';
+@use '../components/swiper';
+
+@mixin full-size {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 55vh;
+
+  &__background {
+    @include m.background-layers;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 80%, 0 100%);
+
+    &--lower {
+      background: url(../../assets/images/bg-images/aboutpage-herobg.svg) center/cover no-repeat;
+    }
+
+    &--upper {
+      background-color: rgba(black, 0.6);
+    }
+  }
+
+  &__content {
+    transform: translateY(60%);
+  }
+
+  &__text {
+    &--headline {
+      color: white;
+    }
+  }
+}
+
+
+    ul.timeline {
+      list-style-type: none;
+      position: relative;
+
+      &:before {
+        content: ' ';
+        background: black;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+      }
+
+      > li {
+        margin: 20px 0;
+        padding-left: 60px;
+        margin-bottom: 2em;
+
+        &:before {
+          content: ' ';
+          background: white;
+          display: inline-block;
+          position: absolute;
+          border-radius: 50%;
+          border: 3px solid v.$color-primary;
+          left: 20px;
+          width: 20px;
+          height: 20px;
+          z-index: 400;
+        }
+      }
+    }
+
+
+
+.values {
+  position: relative;
+  padding-bottom: 4rem;
+  
+  &__background {
+    @include m.background-layers;
+  
+    &--lower {
+      background: url(../../assets/images/bg-images/valuesbg.png) center/cover no-repeat;
+    }
+  
+    &--upper {
+      background-color: rgba(#4B4B4B, 0.9);
+    }
+  }
+
+  &__content {
+    z-index: 400;
+  }
+}
+
+  .leaf-adjustment {
+
+    &--left {
+      transform: translateX(-20rem);
+  
+      & img {
+        transform: translateY(-5rem);
+      }
+    }
+
+    &--right {
+      transform: transformX(-20rem);
+  
+      &img {
+        transform: transformY(-15rem);
+      }
+    }
+  }
