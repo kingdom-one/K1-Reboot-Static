@@ -36,22 +36,24 @@
   }
 }
 
-ul {
-  list-style: none;
-}
-
-li::before{
-  content: ".";
-  color: v.$color-primary;
-  font-weight: bold;
-  font-size: 3em;
-  display: inline-block !important;
-  width: 1em;
-  margin-right: 2em;
-}
-
-li {
-  margin-top: -3em;
+.talent-description {
+    ul {
+        list-style: none;
+      }
+      
+      li::before{
+        content: ".";
+        color: v.$color-primary;
+        font-weight: bold;
+        font-size: 3em;
+        display: inline-block !important;
+        width: 1em;
+        margin-right: 2em;
+      }
+      
+      li {
+        margin-top: -3em;
+      }
 }
 
 .services-calculator {

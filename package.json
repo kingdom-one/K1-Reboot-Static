@@ -4,8 +4,8 @@
 	"description": "",
 	"browserslist": "> 0.5%, last 2 versions, not dead",
 	"scripts": {
-		"start": "parcel src/about.html",
-		"build": "parcel build src/about.html"
+		"start": "parcel src/processandpricing.html",
+		"build": "parcel build src/processandpricing.html"
 	},
 	"author": "",
 	"license": "ISC",
