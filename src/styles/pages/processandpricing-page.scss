@@ -1,0 +1,111 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+@use '../components/front-page/quick-sell';
+@use '../components/swiper';
+
+@mixin full-size {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 55vh;
+
+  &__background {
+    @include m.background-layers;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 80%, 0 100%);
+
+    &--lower {
+      background: url(../../assets/images/bg-images/processandpricing-bg.svg) center/cover no-repeat;
+    }
+
+    &--upper {
+      background-color: rgba(black, 0.6);
+    }
+  }
+
+  &__content {
+    transform: translateY(60%);
+  }
+
+  &__text {
+    &--headline {
+      color: white;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li::before{
+  content: ".";
+  color: v.$color-primary;
+  font-weight: bold;
+  font-size: 3em;
+  display: inline-block !important;
+  width: 1em;
+  margin-right: 2em;
+}
+
+li {
+  margin-top: -3em;
+}
+
+.services-calculator {
+  background-color: #2E3636;
+
+  //&__content {
+
+  //}
+}
+
+.services-calculator {
+  position: relative;
+
+  &__background {
+    @include m.background-layers;
+
+    &--lower {
+      background-color: #707070;
+      clip-path: polygon(0 20%, 100% 0, 100% 100%, 100% 100%, 0 80%);
+    }
+
+    &--upper {
+      background-color: #2E3636;
+      clip-path: polygon(0 0, 100% 20%, 100% 80%, 80% 100%, 0 100%);
+    }
+  }
+
+  &__content {
+    transform: translateY(20%);
+  }
+
+  &__text {
+    &--headline {
+      color: white;
+    }
+  }
+}
+
+
+.leaf-adjustment {
+
+  &--left {
+    transform: translateX(-20rem);
+
+    & img {
+      transform: translateY(-5rem);
+    }
+  }
+
+  &--right {
+    transform: transformX(-20rem);
+
+    &img {
+      transform: transformY(-15rem);
+    }
+  }
+}
