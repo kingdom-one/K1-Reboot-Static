@@ -36,36 +36,18 @@
   }
 }
 
-.talent-description {
-    ul {
-        list-style: none;
-      }
-      
-      li::before{
-        content: ".";
-        color: v.$color-primary;
-        font-weight: bold;
-        font-size: 3em;
-        display: inline-block !important;
-        width: 1em;
-        margin-right: 2em;
-      }
-      
-      li {
-        margin-top: -3em;
-      }
+.talent-description li {
+  margin-bottom: 5rem;
+
+  &::marker {
+    color: v.$color-primary;
+    font-size: 1.4em;
+  }
 }
 
 .services-calculator {
   background-color: #2E3636;
-
-  //&__content {
-
-  //}
-}
-
-.services-calculator {
-  position: relative;
+  margin-bottom: 10rem;
 
   &__background {
     @include m.background-layers;
@@ -92,9 +74,13 @@
   }
 }
 
+.our-services {
+  & h2 {
+    margin-bottom: -5rem;
+  }
+}
 
 .leaf-adjustment {
-
   &--left {
     transform: translateX(-20rem);
 
@@ -104,10 +90,10 @@
   }
 
   &--right {
-    transform: transformX(-20rem);
+    transform: translateX(-20rem);
 
-    &img {
-      transform: transformY(-15rem);
+    & img {
+      transform: translateY(-15rem);
     }
   }
 }
